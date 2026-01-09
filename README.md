@@ -174,6 +174,23 @@ docker-compose down -v
 docker-compose up -d
 ```
 
+### Delete Volumes
+
+To remove all Docker volumes associated with this project:
+
+```bash
+# Stop and remove containers with their volumes
+docker-compose down -v
+
+# List all volumes to verify removal
+docker volume ls
+
+# Remove specific volume manually (if needed)
+docker volume rm odoo-from-template_db-data odoo-from-template_web-data
+```
+
+**Warning**: Deleting volumes will permanently remove all data including databases, filestore, and configurations. Make sure to backup before removing volumes.
+
 ### Change PostgreSQL Password
 
 1. Edit the `.env` file
