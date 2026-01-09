@@ -24,7 +24,7 @@ odoo-from-template/
 ### 1. Clone or Download
 
 ```bash
-cd /path/to/odoo-from-template
+git clone https://github.com/Amirulmuuminin/odoo-docker-template.git
 ```
 
 ### 2. Configure Environment
